@@ -1,0 +1,29 @@
+{
+  "name": "shortbus",
+  "version": "1.0.0",
+  "description": "SH0RTBUS - a project-scoped, append-only message bus that lets agents and subagents talk to each other.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "shortbus": "./src/cli.ts"
+  },
+  "files": [
+    "src",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test --test-reporter=tap",
+    "typecheck": "tsc --noEmit",
+    "start": "node src/server.ts",
+    "bench": "node scripts/bench.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
